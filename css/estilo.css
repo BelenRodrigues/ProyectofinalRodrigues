@@ -159,7 +159,7 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: #3b1903;
-  background-image: url(../Assets/portada\ 2.jpg);
+  background-image: url(../assets/portada\ 2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 25rem;
@@ -229,8 +229,9 @@ footer {
   margin-right: 1.25rem;
 }
 
+/* RESPONSIVE */
 /* Media query para mobile */
-@media screen and (max-width: 667px) {
+@media (max-width: 667px) {
   /*Barra de nav*/
   nav ul li a {
     font-size: 0.75rem;
@@ -260,7 +261,6 @@ footer {
     width: 30%;
     box-sizing: border-box;
     padding: 20px;
-    margin: 20px;
   }
   .descripcion-chocolate {
     width: 70%;
@@ -310,7 +310,7 @@ footer {
     width: 80%;
   }
   .Imagen-productos-h {
-    height: 20rem;
+    height: 15rem;
   }
   /*Footer*/
   footer {
@@ -342,7 +342,7 @@ footer {
   }
 }
 /* Media query tablet */
-@media screen and (max-width: 768px) {
+@media (max-width: 1024px) {
   /*Barra de nav*/
   nav ul li a {
     font-size: 1rem;
@@ -488,6 +488,10 @@ nav ul li a:hover {
 }
 .descubremas:active {
   background-color: #490000;
+}
+
+.Descripcion {
+  font-size: 1.25rem;
 }
 
 /* Tarjeta-s*/
