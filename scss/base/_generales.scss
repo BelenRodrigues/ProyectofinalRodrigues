@@ -31,7 +31,7 @@ header {
     width: auto;
     height: 4rem;
     margin-left: .625rem;
-    animation: rotar 5s linear infinite;
+    animation: rotar 9s linear infinite;
 }
 @keyframes rotar {
     from{
@@ -67,7 +67,7 @@ h2 {
 }
 
 p {
-    color: #3b1903;
+    color: $color-marron;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
     margin-left: 1.25rem;
@@ -75,7 +75,7 @@ p {
 }
 
 .parrafo-descripcion {
-    color: #3b1903;
+    color: $color-marron;
     text-align: left;
     font-size: 1.25rem;
     font-style: initial;
@@ -100,17 +100,13 @@ p {
     font-style: oblique;
     margin-bottom: 35px;
     font-size: 1.5625rem;
-    color: #3b1903;
+    color: $color-marron;
 }
 
 /* Contenedor*/
 
 .contenedor-bombones {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
+@include grid (repeat(3, 1fr), 1.25rem,1.25rem,1.25rem);
 }
 
 /*Footer*/
@@ -120,7 +116,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(72, 30, 20);
-    color: #FFF;
+    color: $color-blanco;
 
     /* Color del texto en el footer */
     padding: 20px;
@@ -132,26 +128,26 @@ footer {
     text-align: center;
     font-size: 1rem;
     font-style: oblique;
-    color: white;
+    color: $color-blanco;
 }
 
 .redes-sociales {
     padding-top: 1.25rem;
-    color: white;
+    color: $color-blanco;
     display: flex;
     justify-content: flex-start;
 
     img {
-        width: 2.5rem;
-        height: 2rem;
+        width: 3rem;
+        height: 2.5rem;
         padding: 0 4px;
     }
 
     p {
-        color: white;
+        color: $color-blanco;
     }
 }
 
 .logo-pequeño img {
-    height: 4rem;
+    @extend .logo
 }

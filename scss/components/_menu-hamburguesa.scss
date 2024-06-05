@@ -24,15 +24,16 @@ nav {
 }
 
 .nav {
-    color: white;
+    color: $color-blanco;
     text-decoration: none;
 }
 
 .navbar-toggler {
-    border-color: white;
-    color: white;
+    border-color: $color-blanco;
+    color: $color-blanco;
 }
 
 .navbar-toggler-icon {
-    background-color: white;
+    background-color: $color-blanco;
 }
+

@@ -29,13 +29,13 @@ header {
 }
 
 /* Logo */
-.logo {
+.logo, .logo-pequeño img {
   display: flex;
   align-items: center;
   width: auto;
   height: 4rem;
   margin-left: 0.625rem;
-  animation: rotar 5s linear infinite;
+  animation: rotar 9s linear infinite;
 }
 
 @keyframes rotar {
@@ -109,7 +109,7 @@ p {
 .contenedor-bombones {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 1.25rem;
   margin-left: 1.25rem;
   margin-right: 1.25rem;
 }
@@ -120,7 +120,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: rgb(72, 30, 20);
-  color: #FFF;
+  color: white;
   /* Color del texto en el footer */
   padding: 20px;
   height: auto;
@@ -141,16 +141,12 @@ footer {
   justify-content: flex-start;
 }
 .redes-sociales img {
-  width: 2.5rem;
-  height: 2rem;
+  width: 3rem;
+  height: 2.5rem;
   padding: 0 4px;
 }
 .redes-sociales p {
   color: white;
-}
-
-.logo-pequeño img {
-  height: 4rem;
 }
 
 /*Inicio*/
@@ -166,10 +162,10 @@ footer {
   margin-top: 0.625rem;
 }
 .section-principal h1 {
-  color: #fdfcf9;
+  color: white;
   text-align: center;
   text-decoration: none;
-  border-bottom: 5px solid #fdfcf9;
+  border-bottom: 5px solid white;
   margin-bottom: 40px;
   margin-top: 40px;
   font-size: 6.25rem;
@@ -184,7 +180,7 @@ footer {
   align-items: center;
   text-align: center;
   padding: 10px 20px;
-  background-color: #F5F5DC;
+  background-color: white;
   min-height: 5rem;
 }
 
@@ -212,7 +208,7 @@ footer {
   width: 80%;
   box-sizing: border-box;
   padding: 20px;
-  text-align: center;
+  text-align: justify;
 }
 
 .imagen {
@@ -224,12 +220,52 @@ footer {
 .contenedor-productos {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
+  gap: 1.25rem;
   margin-left: 1.25rem;
   margin-right: 1.25rem;
 }
 
-/* RESPONSIVE */
+/* Media query tablet */
+@media (max-width: 1024px) {
+  /*Barra de nav*/
+  nav ul li a {
+    font-size: 1rem;
+  }
+  /*Inicio*/
+  .carousel-item img {
+    width: 100%;
+    height: 15.625rem;
+  }
+  /*Mundo del Chocolate*/
+  .foto {
+    width: 30%;
+  }
+  .descripcion-chocolate {
+    width: 70%;
+  }
+  .imagen {
+    width: 9.375rem;
+    height: 9.375rem;
+    position: relative;
+    top: 6.25rem;
+  }
+  /*Productos*/
+  .contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Imagen-productos {
+    height: auto;
+  }
+  /*Bombones*/
+  .contenedor-bombones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Imagen-productos-h {
+    height: 18.75rem;
+  }
+}
 /* Media query para mobile */
 @media (max-width: 667px) {
   /*Barra de nav*/
@@ -260,22 +296,22 @@ footer {
   .foto {
     width: 30%;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 2vw;
   }
   .descripcion-chocolate {
     width: 70%;
     box-sizing: border-box;
-    padding: 20px;
-    text-align: justify;
+    padding: 2vw;
+    text-align: center;
     font-size: 0.75rem;
   }
   .imagen {
-    width: 6.5rem;
-    height: 6.5rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     position: relative;
-    top: 10rem;
-    right: 1.3rem;
+    top: 8rem;
+    left: 1rem;
   }
   /*Productos*/
   h1 {
@@ -341,55 +377,11 @@ footer {
     bottom: 0.3rem;
   }
 }
-/* Media query tablet */
-@media (max-width: 1024px) {
-  /*Barra de nav*/
-  nav ul li a {
-    font-size: 1rem;
-  }
-  /*Inicio*/
-  .carousel-item img {
-    width: 100%;
-    height: 15.625rem;
-  }
-  /*Mundo del Chocolate*/
-  .foto {
-    width: 30%;
-  }
-  .descripcion-chocolate {
-    width: 70%;
-  }
-  .imagen {
-    width: 9.375rem;
-    height: 9.375rem;
-    position: relative;
-    top: 6.25rem;
-  }
-  /*Productos*/
-  .contenedor-productos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .Imagen-productos {
-    height: auto;
-  }
-  /*Bombones*/
-  .contenedor-bombones {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .Imagen-productos-h {
-    height: 18.75rem;
-  }
-}
 /*Carousel*/
-#carouselExampleIndicators {
-  margin-bottom: 1.25rem;
-}
-
 .carousel-item img {
   width: 100%;
-  height: 34.375rem;
+  height: 30rem;
+  padding: 1rem;
 }
 
 .carousel-control-prev-icon,
@@ -439,7 +431,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   background-color: white;
-  border: 1px solid #ccc;
+  border: 1px solid white;
   padding: 20px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   width: 98%;
@@ -451,7 +443,7 @@ nav ul li a:hover {
   width: 100%;
 }
 .tarjeta:hover {
-  background-color: #f8f8f8;
+  background-color: white;
   border: 2px solid #4e0202;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -508,7 +500,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   background-color: white;
-  border: 1px solid #ccc;
+  border: 1px solid white;
   padding: 20px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   width: 98%;
@@ -527,7 +519,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   background-color: white;
-  border: 1px solid #ccc;
+  border: 1px solid white;
   padding: 20px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   width: 98%;
@@ -540,7 +532,7 @@ nav ul li a:hover {
 }
 
 .Imagen-productos-h {
-  height: 21.875rem;
+  height: 20rem;
   width: 100%;
   border-radius: 10%;
   padding-bottom: 20px;

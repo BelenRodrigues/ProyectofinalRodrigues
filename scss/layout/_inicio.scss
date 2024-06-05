@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #3b1903;
+  background-color: $color-marron;
   background-image: url(../assets/portada\ 2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,10 +12,10 @@
   margin-top: .625rem;
 
   h1 {
-    color: #fdfcf9;
+    color: $color-blanco;
     text-align: center;
     text-decoration: none;
-    border-bottom: 5px solid #fdfcf9;
+    border-bottom: 5px solid $color-blanco;
     margin-bottom: 40px;
     margin-top: 40px;
     font-size: 6.25rem;
@@ -31,12 +31,12 @@
   align-items: center;
   text-align: center;
   padding: 10px 20px;
-  background-color: #F5F5DC;
+  background-color: $color-blanco;
   min-height: 5rem;
 }
 
 .Parrafo-conocenuestrahistoria {
-  color: #3b1903;
+  color: $color-marron;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   font-size: 1.25rem;
