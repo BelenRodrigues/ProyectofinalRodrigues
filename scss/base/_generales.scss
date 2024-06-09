@@ -33,11 +33,13 @@ header {
     margin-left: .625rem;
     animation: rotar 9s linear infinite;
 }
+
 @keyframes rotar {
-    from{
+    from {
         transform: rotateY(180deg);
     }
-    to{
+
+    to {
         transform: rotateY(-360deg);
     }
 }
@@ -93,6 +95,26 @@ p {
     margin-top: 30px;
     margin-bottom: 35px;
     font-style: oblique;
+    background: none;
+    animation: cambiarColor 5s;
+    animation-iteration-count: infinite;
+    transition: 3s;
+
+    &:hover {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes cambiarColor {
+    0% {
+        color: #f5d7b2;
+        /* Color inicial */
+    }
+
+    100% {
+        color: #d56e1f;
+        /* Color final */
+    }
 }
 
 .Descripcion {
@@ -106,7 +128,7 @@ p {
 /* Contenedor*/
 
 .contenedor-bombones {
-@include grid (repeat(3, 1fr), 1.25rem,1.25rem,1.25rem);
+    @include grid (repeat(3, 1fr), 1.25rem, 1.25rem, 1.25rem);
 }
 
 /*Footer*/

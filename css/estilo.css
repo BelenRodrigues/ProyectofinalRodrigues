@@ -95,8 +95,25 @@ p {
   margin-top: 30px;
   margin-bottom: 35px;
   font-style: oblique;
+  background: none;
+  animation: cambiarColor 5s;
+  animation-iteration-count: infinite;
+  transition: 3s;
+}
+.parrafo-descripcion2:hover {
+  transform: scale(1.5);
 }
 
+@keyframes cambiarColor {
+  0% {
+    color: #f5d7b2;
+    /* Color inicial */
+  }
+  100% {
+    color: #d56e1f;
+    /* Color final */
+  }
+}
 .Descripcion {
   text-align: center;
   font-style: oblique;
@@ -254,6 +271,12 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .parrafo-descripcion2 {
+    font-size: 1.2rem;
+  }
+  .parrafo-descripcion2:hover {
+    transform: scale(1.1);
+  }
   .Imagen-productos {
     height: auto;
   }
@@ -285,10 +308,6 @@ footer {
   .Parrafo-conocenuestrahistoria {
     font-size: 1rem;
   }
-  /*Carousel*/
-  .carousel-item img {
-    height: 15rem;
-  }
   /*Mundo del Chocolate*/
   .titulo-principal {
     font-size: 3.75rem;
@@ -317,11 +336,18 @@ footer {
   h1 {
     font-size: 3.125rem;
   }
-  .parrafo-descripcion,
+  .parrafo-descripcion {
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
   .parrafo-descripcion2 {
     font-size: 1rem;
     margin-top: 20px;
     margin-bottom: 25px;
+  }
+  .parrafo-descripcion2:hover {
+    transform: scale(1);
   }
   .Descripcion {
     margin-bottom: 35px;
@@ -380,7 +406,7 @@ footer {
 /*Carousel*/
 .carousel-item img {
   width: 100%;
-  height: 30rem;
+  height: auto;
   padding: 1rem;
 }
 
@@ -455,7 +481,7 @@ nav ul li a:hover {
 }
 
 .boton {
-  background-color: rgb(198, 91, 4);
+  background-color: #ad7026;
   color: white;
   font-size: 1rem;
   border-radius: 10px;
@@ -471,7 +497,7 @@ nav ul li a:hover {
 }
 
 .descubremas {
-  background-color: #cc5b0a;
+  background-color: #ad7026;
   color: white;
   padding: 5px;
   margin-top: 20px;
@@ -484,6 +510,7 @@ nav ul li a:hover {
 
 .Descripcion {
   font-size: 1.25rem;
+  font-weight: bold;
 }
 
 /* Tarjeta-s*/
@@ -532,7 +559,7 @@ nav ul li a:hover {
 }
 
 .Imagen-productos-h {
-  height: 20rem;
+  height: 25rem;
   width: 100%;
   border-radius: 10%;
   padding-bottom: 20px;
